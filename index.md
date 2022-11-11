@@ -39,6 +39,14 @@ Screenshot of the work:
 
 - This can be benefitial whenever we are looking for keyterms in the code especially in certain .txt files. (Pretty Useful) 
 
+
+## 2nd Example of `Color` used
+
+![#1.2Code](Colors#2-Grep.png)
+
+
+- In this image what we end up doing is identifying is the term "research" and in this
+
 ***
 
 
