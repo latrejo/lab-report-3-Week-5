@@ -166,7 +166,7 @@ find . -size -/+n -type f
 - We don't want to use +1k because most of the file are actually greater then 1 or even 10 kilobytes and the best choice would be 100k to check out. 
 
 
-## Third Example of Sizze for Find 
+## Third Example of Size for Find 
 
 - In this example, instead of finding kilobytes lets try a megabyte or 1000 kilobytes. 
 
