@@ -42,119 +42,27 @@ Screenshot of the work:
 
 ## 2nd Example of `Color` used
 
-![#1.2Code](Colors#2-Grep.png)
+![#1.2Code](Colors%232-Grep.png)
 
 
-- In this image what we end up doing is identifying is the term "research" and in this
+- In this image what we end up doing is identifying is the term "research" and in this example which we are looking up at all the files that contain the word "research"
 
+
+## 3rd Example of `Color` used 
+
+![#1.3Code](Colors%233-Grep.png)
+
+- In this image we used a more easy number which would be "20" as our search.
+- Of course because 20 is more of a basic number then 2001, in the terminal there is way more files for 20 then 2001.
 ***
 
 
 
-### Unique Line command for Grep (#2) `--invert-match`
-
-1. Similar to Step 1.  in for #1 in Grep, we have to create a code that connects the information from the technical code.
-
-2.  Afterwards, use that find-results.txt and then in the terminal you can write grep `--invert-match` and you should get something similiar to what the screenshots looks like below;
-
-![#2Code](Invert-match%231.png)
-
-![#2.5Code](invert-match%232.png)
-
-> The idea here is that it search for files that **doesn't** contain what the expression has in that certain .txt file.
-
--  The syntax of how this works is **grep --invert-match "expression" certain.txt**
-
-- This I believe can be useful in many ways especially by identifying if an of the files that you wrote / created isn't written as asked, and this functions helps out with that.
-
-- (P.S: For these in-line arguments can serve for more purposes, but these ideas are ones that I believe is right.)
-
-***
-
-### Unique Line command for Grep (#3) `--count`
-
-1. Redo Step #1 for Grep in the previous two examples.
-
-2. Next, use that unique .txt and then in the terminal you can write grep `--count` and you should get something similar to the screenshot below;
-
-![#3Code](CountWithoutWC.png)
-
-> The purpose of this is pretty simple it is just checking a specific expression of the file that you wrote in the terminal. 
-
-- For me, I believe that this is a more detailed wordcount where it is looking how many lines contain the specfic expression that you write in the terminal.
-
-- I believe this really useful to see if a certain assignment has a good quantity of that certain expression, for example ".txt" does it have more than 50 for this project? You could just type that in the terminal and end up getting your answer.
-
-***
-
-
-## Less Line Command
-
-- Next up is less line command where this less command in the terminal, what the less function does is that it gives you a version of the file in the terminal so you don't have to go looking for a certain file and read it
-
-- The syntax of how find `less` works
-
-
-> less  \\file-path// (so any file .txt could work)
-
-**
-
-//
 
 
 
 
-### Unique Line Command  for less(#1): `-E`
-
-1. In this to make it work you need to use a .txt file and any should work and it should be alright in this example we are using a journal.pbio in the plos directory inside of the technical directory.
-
-2. To get to step 1, you must use cd technical which changes you to the directory of the technical, then use cd plos so that you can access the journals that are given.
-
-3. Then you want to write something like this;
-
-
-![#4Code](-ECode.png)
-
-> P.S the reason why you need cd is because the .txt file doesn't exist in the current directory and you need to go all the way into directory in the plos directory.
-
-4. Once you write the syntax of;
-
-> less -E //file-path//
-
-5. Once you write it you should get something like this;
-
-![#4.99Code](-ECode%232.png)
-
-> The purpose of this is that without the -E, you get the same output but by just adding -E, it closes automatically which you would have to type in q.
-
-
-- Even though it isn't much that it helps out, it can really help you when you forget to type q, because that is what happened to me and I had to check my notes again, so with this I don't need to remember.
-
-- Only big con of this, is once you reach the end by scrolling then it ends up taking you back to the first screenshot by step 3.
-
-### Unique Line Command for Less(#2); `-N`
-
-1. Use the first two steps to help you guide you to the terminal to write your answer.
-
-2. Then in the terminal you want to write something like this:
-
-
-![Code#5](-NCode.png)
-
-> The purpose of this is somthing mainly involving with organization, as this is the output that it gives.
-
-
-![Code#5.99](-NOutput.png)
-
-> What it produces is numbers and lines in the left side of text/ in the file that is given.
-
-- This is useful, so that you organize and point out errors on the files with line numbers and not just say in the line about this.
-
-- Something unique about this is that you can use both -N and -E at the same time 
-
-
-
-### Unique Line Command for Less(#3); `Open Multiple Files`
+### Unique Line Command for Less(#1); `Open Multiple Files`
 
 1. Do the same first two steps from #1 of Less.
 
@@ -165,8 +73,10 @@ Screenshot of the work:
 
 > What this does is just gets the two paths and basically just prints it out in the output. 
 - P.S It also works with -N and -E!
+- -N: Helps out with organization and puts numbers for each line in the file.
+- -E: Helps you by basically printing out the files in the terminal, and you can exit it by q key.
 
--Syntax: less //file-path1// //file-path2// ...
+-Syntax: `less //file-path1// //file-path2// ...`
 
 3. If you typed it correctly you get something like this.
 
@@ -175,6 +85,46 @@ Screenshot of the work:
 4. Once you get this at the end of the first file you have to type in `:` key then followed up by `n` key and with that you can go to the next page. 
 
 > This is super beneficial as with this you can look at the most important files by typing this in the termnal, by the way you can defintly add more then 2 files at the same time...
+
+
+## 2nd Example out getting multiple files 
+
+
+- You would start off with making the command and should be like this;
+
+![CodeExample#2](MultipleFIles2.png)
+
+> Rememeber, to change the directories to make this work and for this you have to `cd technical` and then this time `cd biomed` instead of `cd plos` for this example.
+
+- Then when you have it, you should see something like this:
+
+![Code2Example#2](1stPageSecondExample.png)
+
+- With this you can see the first file that you wanted to see, then by using `:n` you can move on to the next file that you put, like this. 
+
+![Code3Example#2](2ndPageExample2.png)
+
+- To leave just press the q key and to go back completely and out of cd of biomed you use `cd ..`
+
+
+## 3rd Example out getting multiple files 
+
+
+- You would start off with making the command and should be like this;
+
+![CodeExample#3](MultipleFIles2.png)
+
+> Rememeber, to change the directories to make this work and for this you have to `cd technical` and then this time `cd 911report` instead of `cd plos` and `cd biomed` for this example.
+
+- Then when you have it, you should see something like this:
+
+![Code2Example#3](1stPageThirdExample.png)
+
+- With this you can see the first file that you wanted to see, then by using `:n` you can move on to the next file that you put, like this. 
+
+![Code3Example#3](2ndPageExample3.png)
+
+- To leave just press the q key and to go back completely and out of cd of biomed you use `cd ..`
 
 
 ***
@@ -189,38 +139,7 @@ Screenshot of the work:
 Syntax: find //directories/files/.txt/...//(almost anything practicially)
 
 
-### Unique Line Command for Find(#1); `Empty`
-
-1. For this one you don't need any prep before the question.
-
-2. By typing in the syntax `find . -empty` you end up getting unique answers like this;
-
-![Code#7](IsEmpty.png)
-
-> In this image, it is explaining that by using this command, it identifies if something is empty or not.
-
-- In this case, some paths that are "empty" and have nothing in it.
-- This can be useful, if you have a lot of files and paths and are missing data or information in a certain path, or if they were meant to be empty.
-
-
-### Unique Line Command for Find(#2); `Delete`
-
-1. This one is very useful but you must be careful with this one because if you commit an error it can **erase everything** so do this with caution and make sure to save it on desktop before doing this one, just in case you mess up.
-
-2. The syntax of this one is `find . -delete` (please don't enter this, unless you are aware of what it does, it erases everything.)
-
-- An example of this helping and working is like this 
-
-![Code #8](BeforeDelete.png)
-
-> In this code, please pay attention that we still have find-results.txt. Now please look at this;
-
-![Code #8.99](AfterDelete.png)
-
-> As you can see, we used the terminal to get rid of find-results.txt, in this case, it wasn't helpful at all, but whenever you have dupicate files, your friend will be -delete, but use it with caution, if used in correctly it can erase everything.
-
-
-### Unique Lind Command for Find(#3); `-Size`
+### Unique Find Command for Find(#1); `-Size`
 
 1. Use the syntax;
 find . -size -/+n -type f
@@ -234,5 +153,27 @@ find . -size -/+n -type f
 
 
 ![COde#9!!!](Sizek.png)
+
+
+## Second Example of Size for Find
+
+- In this example, instead of finding anything that is less then a kilobyte let us try anything that is greater than 100 kilobyte. 
+
+- So the example should look like this;
+
+![Code#9.2](GreatSizek.png)
+
+- We don't want to use +1k because most of the file are actually greater then 1 or even 10 kilobytes and the best choice would be 100k to check out. 
+
+
+## Third Example of Sizze for Find 
+
+- In this example, instead of finding kilobytes lets try a megabyte or 1000 kilobytes. 
+
+-So the example should look like this;
+
+![Code#9.3](GreaterSizeM.png)
+
+- In this one, there is only one file that is 1 megabyte or bigger and it is actually a package instead.
 
 > Can be very useful when try to set up hard limits on certain files in a job or school/university projects.
